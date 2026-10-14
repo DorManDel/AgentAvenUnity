@@ -1,0 +1,28 @@
+
+# Normalize text line endings in Git.
+* text=auto
+
+# Source code and documentation.
+*.cs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.editorconfig text eol=lf
+
+# Unity serialized files.
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.inputactions text eol=lf
+*.scenetemplate text eol=lf
+
+# Binary assets should never be line-ending converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.psd binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.mp3 binary
+*.ogg binary

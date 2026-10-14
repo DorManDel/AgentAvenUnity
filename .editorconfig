@@ -1,0 +1,44 @@
+
+# AgentAvenUnity - Shared Code Style
+# Applies to all files inside this project.
+
+# ## Stop searching settings in parent folder of EditorCOnfig
+root = true
+
+# General text rules ---
+[*]
+charset = utf-8
+
+# ## unified end of line [Linux/Win/Git]:s
+end_of_line = lf
+
+# ## promises proper EOL at EOF [EndOfFile]
+insert_final_newline = true
+
+trim_trailing_whitespace = true
+# ----------------------
+
+# C# code style ---
+[*.cs]
+# ## uses spaces (and not tabs [/t], size of 4)
+indent_style = space
+indent_size = 4
+
+# Place opening braces on a new line = '{'.
+csharp_new_line_before_open_brace = all
+
+# Keep switch/case indentation consistent.
+csharp_indent_case_contents = true
+csharp_indent_switch_labels = true
+
+# Sort System using directives first.
+dotnet_sort_system_directives_first = true
+
+# Documentation and configuration files
+[*.{md,json,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# Markdown may intentionally use trailing spaces.
+[*.md]
+trim_trailing_whitespace = false
